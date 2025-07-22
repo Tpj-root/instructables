@@ -1,0 +1,21 @@
+# Include your custom_postgui HAL commands here
+# This file will not be overwritten when you run PNCconf again
+
+#linkp   a_table_b_head_kins.tool_length <= pyvcp.my-spinbox
+#net  => temp
+
+#net temp pyvcp.my-spinbox => myhalpin
+
+
+#signal1 = hal.Signal("signal1")
+#net signal1 signal1pin <= pyvcp.my-spinbox
+#net a_table_b_head_kins.tool-length <= signal1
+
+#net signal2 pyvcp.my-spinbox
+#net signal2 signal1
+
+net signal2 pyvcp.my-spinbox => a_table_b_head_kins.tool_length
+net signal3 pyvcp.button1 => halui.mdi-command-00
+net signal4 pyvcp.button2 => halui.mdi-command-01
+net signal5 pyvcp.button3 => halui.mdi-command-02
+

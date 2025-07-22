@@ -1,0 +1,36 @@
+<pyvcp>
+	<!--<label>
+		<text> "Spindle speed" </text>
+	</label>
+	<bar>
+		<halpin> "spindle-speed"</halpin>
+		<max_> 5000 </max_>
+	</bar>
+	-->
+	<label>
+		<text> "current tool length" </text>
+	</label>
+	<spinbox>
+		<halpin> "my-spinbox" </halpin>
+		<min_> 0 </min_>
+		<max_> 50 </max_>
+		<initval> 0 </initval>
+		<resolution> 0.1</resolution>
+		<format> "2.3f" </format>
+		<font> "Ariel" </font>
+		<param_pin> 0 </param_pin>
+	</spinbox>
+	
+	<button>
+		<halpin> "button1" </halpin>
+		<text> "Go to probe xy" </text>
+	</button>
+	<button>
+		<halpin> "button2" </halpin>
+		<text> "Probe ref tool" </text>
+	</button>
+	<button>
+		<halpin> "button3" </halpin>
+		<text> "Probe current tool" </text>
+	</button>
+</pyvcp>

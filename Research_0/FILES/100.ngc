@@ -1,0 +1,13 @@
+;gcode to probe ref tool
+o100 sub
+	G0 G53 X290 Y-59 Z60 A0 B0
+	G38.2 F400 Z-64
+	g91
+	g0 z3
+	G38.2 F50 Z-5
+	g90
+	G10 L20 P6 Z0
+	;G59
+	G0 G53 Z60
+	;#1000 = #5063; get ref tool probe point, does not require manual input
+o100 endsub
